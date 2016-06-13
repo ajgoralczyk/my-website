@@ -1,6 +1,13 @@
-import {bootstrap}    from '@angular/platform-browser-dynamic';
+import {bootstrap} from 'angular2/platform/browser';
 import {AppComponent} from './app.component';
-import * as _ from 'underscore';
-import * as duScroll from 'angular-scroll';
+import {TRANSLATE_PROVIDERS} from 'ng2-translate/ng2-translate';
+import {HTTP_PROVIDERS} from 'angular2/http';
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, [HTTP_PROVIDERS, TRANSLATE_PROVIDERS]);
+
+
+
+
+
+
+

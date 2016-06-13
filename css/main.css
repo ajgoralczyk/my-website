@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -11,16 +12,17 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: #191716;
+  background-color: #272727;
   color: #F3F3F3;
-  font-family: 'Open Sans', Arial, sans-serif; }
+  font-family: 'Roboto', Arial, sans-serif; }
 
-a {
-  color: #191716;
-  text-decoration: none; }
-  a:hover, a:focus {
-    color: #50CDB6;
-    text-decoration: none; }
+main {
+  height: 100%; }
+
+.logo {
+  padding: 5px 15px 5px 0;
+  font-size: 32px;
+  vertical-align: middle; }
 
 .jumbotron {
   width: 100%;
@@ -34,18 +36,39 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  position: relative; }
   .jumbotron .image {
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px; }
+  .jumbotron .page-title {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    color: #096589;
+    width: 100%; }
 
 section {
-  color: #191716; }
+  color: #272727; }
+  section a {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    vertical-align: middle;
+    color: #272727;
+    text-decoration: none; }
+    section a:hover, section a:focus {
+      color: #50CDB6;
+      text-decoration: none; }
   section:nth-child(odd) {
-    background-color: #F8F8F8; }
+    background-color: #FDFFFC; }
   section:nth-child(even) {
     background-color: #F3F3F3; }
   section .container {
@@ -88,12 +111,14 @@ nav {
   background: transparent;
   height: 50px;
   position: fixed;
-  color: #FF3B3F; }
+  color: #096589; }
 
 .language {
   position: fixed;
   right: 20px;
   top: 20px; }
+  .language li {
+    cursor: pointer; }
   .language .active {
     font-weight: 600; }
 
@@ -106,14 +131,37 @@ nav {
     cursor: pointer;
     margin: 5px;
     padding: 5px; }
+    .dot-menu li:focus span, .dot-menu li:hover span {
+      text-align: right;
+      opacity: 1; }
     .dot-menu li a {
-      width: 12px;
-      height: 12px;
-      border-radius: 10px;
-      border: 1px solid #FF3B3F;
-      display: block; }
-    .dot-menu li.active a {
-      background-color: #FF3B3F; }
+      width: 14px;
+      height: 14px;
+      border-radius: 12px;
+      border: 1px solid #096589;
+      color: #096589;
+      display: block;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease; }
+      .dot-menu li a:focus, .dot-menu li a:hover {
+        color: #096589;
+        text-decoration: none; }
+      .dot-menu li a.active {
+        background-color: #096589; }
+      .dot-menu li a span {
+        text-transform: uppercase;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+        position: absolute;
+        opacity: 0;
+        right: 35px;
+        margin-top: -4px; }
 
 textarea {
   resize: none; }
@@ -121,18 +169,22 @@ textarea {
 .asterisk {
   color: #FF3B3F; }
 
+label {
+  font-weight: 400; }
+
 .btn-default {
   background-color: #50CDB6;
   border: #1D9A83;
-  color: #191716;
+  color: #272727;
   padding: 6px 30px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease; }
+  -o-transition: all 0.3s ease;
+  margin-bottom: 50px; }
   .btn-default:hover, .btn-default:active, .btn-default:focus {
     background-color: #1D9A83;
-    color: #F8F8F8; }
+    color: #FDFFFC; }
 
 @media (min-width: 768px) {
   .wide-gutter {
@@ -144,3 +196,15 @@ textarea {
 
 footer span {
   margin: 10px 0; }
+
+footer a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  color: #F3F3F3;
+  text-decoration: none; }
+  footer a:hover, footer a:focus {
+    color: #50CDB6;
+    text-decoration: none; }

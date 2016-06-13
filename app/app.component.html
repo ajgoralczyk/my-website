@@ -1,0 +1,252 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+      <div class="language">
+        <ul class="list-unstyled list-inline">
+              <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')"><span>PL</span></li>
+              <li><span>/</span></li>
+              <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')" ><span>EN</span></li>
+            </ul>
+      </div>
+      <div class="dot-menu hidden-xs hidden-sm" data-gumshoe-header>
+          <ul class="list-unstyled" data-gumshoe>
+              <li><a href="#about" data-scroll><span>About</span></a></li>
+              <li><a href="#experience" data-scroll><span>Experience</span></a></li>
+              <li><a href="#skills" data-scroll><span>Skills</span></a></li>
+              <li><a href="#contact" data-scroll><span>Contact</span></a></li>
+          </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="jumbotron">
+	<div class="page-title">Agnieszka Jaśmina Góralczyk</div>
+</header>
+<div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2">
+                    <h1>About</h1>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <article>
+                        <p>{{ 'HELLO' | translate:'{value: "world"}' }} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut sagittis nulla. Donec ultricies elit vel diam pretium gravida. Phasellus non nisi sed velit bibendum consectetur. Pellentesque ut enim sit amet ex bibendum pulvinar. In vitae nulla et est egestas mollis vitae non metus. Vivamus imperdiet urna nisi, vitae porta lacus aliquam ac. Fusce consequat finibus nisi, eget posuere velit maximus ac. Aenean porttitor magna non lacinia hendrerit. Quisque a augue malesuada, tincidunt risus quis, convallis purus. Vivamus felis enim, dignissim eu eros hendrerit, ornare feugiat tortor. Suspendisse lorem neque, sagittis sit amet velit ac, aliquam rutrum metus. Vestibulum sit amet orci rutrum, malesuada dolor sit amet, rhoncus orci. Nullam lacinia, nisl quis accumsan vestibulum, diam lorem pulvinar lorem, sit amet maximus ipsum purus at enim.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut sagittis nulla. Donec ultricies elit vel diam pretium gravida. Phasellus non nisi sed velit bibendum consectetur. Pellentesque ut enim sit amet ex bibendum pulvinar. In vitae nulla et est egestas mollis vitae non metus. Vivamus imperdiet urna nisi, vitae porta lacus aliquam ac.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2">
+                    <h1>Experience</h1>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <h2>Career</h2>
+                    <article>
+                        <h3>Frontend Developer</h3>
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-xs-6 col-sm-6">Cohesiva</div>
+                            <div class="col-xs-6 col-sm-6" style="text-align: right;">Jan 2014 - Feb 2016</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris massa, tempus nec sollicitudin nec, venenatis lobortis erat. Aliquam ullamcorper iaculis molestie. Nam posuere finibus turpis, vel pretium libero auctor et. Maecenas pellentesque non quam ultricies consectetur. Morbi venenatis metus mauris, et dapibus felis semper vitae. Curabitur iaculis quam non tortor ultricies, ac maximus ex.</p>
+                    </article>
+                    <h2>Education</h2>
+                    <article>
+                        <h3>Master of Computer Science </h3>
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-xs-6 col-sm-6">University of Wrocław</div>
+                            <div class="col-xs-6 col-sm-6" style="text-align: right;">Jan 2014 - Feb 2016</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris massa, tempus nec sollicitudin nec, venenatis lobortis erat. Aliquam ullamcorper iaculis molestie. Nam posuere finibus turpis, vel pretium libero auctor et. Maecenas pellentesque non quam ultricies consectetur. Morbi venenatis metus mauris, et dapibus felis semper vitae. Curabitur iaculis quam non tortor ultricies, ac maximus ex.</p>
+                    </article>
+                    <article>
+                        <h3>Bachelor of Fine Arts</h3>
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-xs-6 col-sm-6">Academy of Art and Design</div>
+                            <div class="col-xs-6 col-sm-6" style="text-align: right;">Jan 2014 - Feb 2016</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris massa, tempus nec sollicitudin nec, venenatis lobortis erat. Aliquam ullamcorper iaculis molestie. Nam posuere finibus turpis, vel pretium libero auctor et. Maecenas pellentesque non quam ultricies consectetur. </p>
+                    </article>
+                    <article>
+                        <h3>Bachelor of Computer Science</h3>
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-xs-6 col-sm-6">University of Wrocław</div>
+                            <div class="col-xs-6 col-sm-6" style="text-align: right;">Jan 2014 - Feb 2016</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris massa, tempus nec sollicitudin nec, venenatis lobortis erat. Aliquam ullamcorper iaculis molestie. Nam posuere finibus turpis, vel pretium libero auctor et. Maecenas pellentesque non quam ultricies consectetur. Morbi venenatis metus mauris, et dapibus felis semper vitae.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2">
+                    <h1>Skills</h1>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <h2>Tools</h2>
+                    <article>
+                        <div class="row wide-gutter">
+                            <div class="col-xs-12 col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li>Adobe Illustrator
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                    <li>Adobe Photoshop
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li>AngularJS
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                    <li>JavaScript
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                    <li>JavaScript
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <h2>Languages</h2>
+                    <article>
+                        <div class="row wide-gutter">
+                            <div class="col-xs-12 col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li>Polish (native)
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                        </ol>
+                                    </li>
+                                    <li>English
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li>Spanish
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                    <li>German
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2">
+                    <h1>Contact</h1>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <div class="row wide-gutter">
+                        <div class="col-xs-12 col-sm-6">
+                          <h2>Say hello</h2>
+                          <form name="contactForm" method="post" action="app/mailer.php">
+                            <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$error.required && contactForm.name.$error.dirty}">
+                              <label for="name">Name <span class="asterisk">*</span></label>
+                              <input type="text" class="form-control" id="name" required [(ngModel)]="formData.name">
+                            </div>
+                            <div class="form-group" ng-class="{ 'has-error' : (contactForm.email.$error.required || contactForm.email.$error.invalid) && contactForm.email.$error.dirty}">
+                              <label for="email">Email <span class="asterisk">*</span></label>
+                              <input type="email" class="form-control" id="email" required [(ngModel)]="formData.email">
+                            </div>
+                            <div class="form-group" ng-class="{ 'has-error' : contactForm.message.$error.required && contactForm.message.$error.dirty}">
+                              <label for="message">Message <span class="asterisk">*</span></label>
+                              <textarea class="form-control" id="message" rows="8" required [(ngModel)]="formData.message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default pull-right">Send</button>
+                          </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                          <h2>You can also find me here</h2>
+                          <ul  class="list-unstyled">
+                            <li><i class="fa fa-linkedin-square logo" aria-hidden="true"></i><a href>https://www.linkedin.com/in/ajgoralczyk</a></li>
+                            <li><i class="fa fa-behance-square logo" aria-hidden="true"></i><a href>https://www.behance.net/ajgoralczyk</a></li>
+                            <li><i class="fa fa-github-square logo" aria-hidden="true"></i><a href>https://github.com/ajgoralczyk</a></li>
+                            <li><i class="fa fa-envelope-square logo" aria-hidden="true"></i><a href>contact@ajgoralczyk.com</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-9">
+                <span class="pull-right"><a href>© ajgoralczyk 2016</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
