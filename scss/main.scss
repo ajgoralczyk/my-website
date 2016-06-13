@@ -272,3 +272,11 @@ footer {
         }
     }
 }
+
+ul.list-unstyled {
+    margin-bottom: 0;
+}
+
+ol, ul {
+    -webkit-padding-start: 30px;
+}

@@ -1,25 +1,24 @@
 <nav class="navbar navbar-fixed-top">
-  <div class="container-fluid">
-      <div class="language">
-        <ul class="list-unstyled list-inline">
-              <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')"><span>PL</span></li>
-              <li><span>/</span></li>
-              <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')" ><span>EN</span></li>
+    <div class="container-fluid">
+        <div class="language">
+            <ul class="list-unstyled list-inline">
+                <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')"><span>PL</span></li>
+                <li><span>/</span></li>
+                <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')"><span>EN</span></li>
             </ul>
-      </div>
-      <div class="dot-menu hidden-xs hidden-sm" data-gumshoe-header>
-          <ul class="list-unstyled" data-gumshoe>
-              <li><a href="#about" data-scroll><span>About</span></a></li>
-              <li><a href="#experience" data-scroll><span>Experience</span></a></li>
-              <li><a href="#skills" data-scroll><span>Skills</span></a></li>
-              <li><a href="#contact" data-scroll><span>Contact</span></a></li>
-          </ul>
+        </div>
+        <div class="dot-menu hidden-xs hidden-sm" data-gumshoe-header>
+            <ul class="list-unstyled" data-gumshoe>
+                <li><a href="#about" data-scroll><span>About</span></a></li>
+                <li><a href="#experience" data-scroll><span>Experience</span></a></li>
+                <li><a href="#skills" data-scroll><span>Skills</span></a></li>
+                <li><a href="#contact" data-scroll><span>Contact</span></a></li>
+            </ul>
         </div>
     </div>
 </nav>
-
 <header class="jumbotron">
-	<div class="page-title">Agnieszka Jaśmina Góralczyk</div>
+    <div class="page-title">Agnieszka Jaśmina Góralczyk</div>
 </header>
 <div>
     <section id="about">
@@ -209,31 +208,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-9">
                     <div class="row wide-gutter">
                         <div class="col-xs-12 col-sm-6">
-                          <h2>Say hello</h2>
-                          <form name="contactForm" method="post" action="app/mailer.php">
-                            <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$error.required && contactForm.name.$error.dirty}">
-                              <label for="name">Name <span class="asterisk">*</span></label>
-                              <input type="text" class="form-control" id="name" required [(ngModel)]="formData.name">
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : (contactForm.email.$error.required || contactForm.email.$error.invalid) && contactForm.email.$error.dirty}">
-                              <label for="email">Email <span class="asterisk">*</span></label>
-                              <input type="email" class="form-control" id="email" required [(ngModel)]="formData.email">
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : contactForm.message.$error.required && contactForm.message.$error.dirty}">
-                              <label for="message">Message <span class="asterisk">*</span></label>
-                              <textarea class="form-control" id="message" rows="8" required [(ngModel)]="formData.message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-default pull-right">Send</button>
-                          </form>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-envelope-square logo" aria-hidden="true"></i><a href>contact@ajgoralczyk.com</a></li>
+                                <li><i class="fa fa-linkedin-square logo" aria-hidden="true"></i><a href>https://www.linkedin.com/in/ajgoralczyk</a></li>
+                            </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6">
-                          <h2>You can also find me here</h2>
-                          <ul  class="list-unstyled">
-                            <li><i class="fa fa-linkedin-square logo" aria-hidden="true"></i><a href>https://www.linkedin.com/in/ajgoralczyk</a></li>
-                            <li><i class="fa fa-behance-square logo" aria-hidden="true"></i><a href>https://www.behance.net/ajgoralczyk</a></li>
-                            <li><i class="fa fa-github-square logo" aria-hidden="true"></i><a href>https://github.com/ajgoralczyk</a></li>
-                            <li><i class="fa fa-envelope-square logo" aria-hidden="true"></i><a href>contact@ajgoralczyk.com</a></li>
-                          </ul>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-behance-square logo" aria-hidden="true"></i><a href>https://www.behance.net/ajgoralczyk</a></li>
+                                <li><i class="fa fa-github-square logo" aria-hidden="true"></i><a href>https://github.com/ajgoralczyk</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

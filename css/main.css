@@ -208,3 +208,9 @@ footer a {
   footer a:hover, footer a:focus {
     color: #50CDB6;
     text-decoration: none; }
+
+ul.list-unstyled {
+  margin-bottom: 0; }
+
+ol, ul {
+  -webkit-padding-start: 30px; }
