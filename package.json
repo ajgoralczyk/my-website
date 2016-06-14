@@ -8,10 +8,8 @@
   "scripts": {
     "start": "tsc && concurrently \"npm run watch-css\" \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
-    "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
@@ -29,7 +27,6 @@
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "node-sass": "^3.7.0",
-    "typescript": "^1.8.10",
-    "typings": "^0.7.12"
+    "typescript": "^1.8.10"
   }
 }
