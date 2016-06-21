@@ -1,7 +1,15 @@
 var express = require('express'),  
     path = require('path'),
     fs = require('fs'),
-    sass = require('node-sass');
+    sassMiddleware = require('node-sass-middleware');
+
+
+
+
+
+
+
+
 
 
 var app = express();  
@@ -9,13 +17,13 @@ var staticRoot = __dirname + '/';
 
 app.set('port', (process.env.PORT || 3000));
 
-app.use(
-     sass.middleware({
-         src: __dirname + '/scss',
-         dest: __dirname + '/app/css',
-         debug: true
-     })
- );
+app.use(sassMiddleware({
+    src: __dirname + 'scss',
+    dest: path.join(__dirname, 'css'),
+    debug: true,
+    outputStyle: 'compressed',
+    prefix:  '/css'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
+}));
 
 app.use(express.static(staticRoot));
 

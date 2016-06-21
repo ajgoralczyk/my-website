@@ -1,6 +1,6 @@
-import {Component, Injectable, Input, provide} from 'angular2/core'; 
+import {Component, Injectable, Input, provide} from '@angular/core'; 
 import {TranslateService, TranslatePipe, TRANSLATE_PROVIDERS} from 'ng2-translate/ng2-translate';
-import {Http, Headers} from 'angular2/http';
+import {Http, Headers} from '@angular/http';
 
 declare var gumshoe: any;
 declare var smoothScroll: any;
