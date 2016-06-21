@@ -11,7 +11,6 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "postinstall": "typings install",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
