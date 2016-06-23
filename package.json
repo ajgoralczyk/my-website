@@ -10,7 +10,7 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "postinstall": "gulp",
+    "postinstall": "npm run build && cd build && npm i",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "build": "tsc && gulp",
