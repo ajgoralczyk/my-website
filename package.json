@@ -10,9 +10,11 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "postinstall": "typings install",
+    "postinstall": "gulp",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build": "tsc && gulp",
+    "prod": "npm run build && cd build && npm i && node server.js"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.2",
@@ -39,8 +41,10 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
+    "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.13.6",
     "lite-server": "^2.2.0",
     "node-sass": "^3.8.0",
