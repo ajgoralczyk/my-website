@@ -2,7 +2,6 @@
 var gulp = require("gulp");  
 var del = require("del");  
 var sourcemaps = require('gulp-sourcemaps');
-
 /**
  * Remove build directory.
  */
@@ -18,7 +17,7 @@ gulp.task("resources", ["server", "app", "assets"], function () {
 });
 /* copy the app core files to the build folder */
 gulp.task("app", ['index'], function(){  
-    return gulp.src(["app/**"])
+    return gulp.src(["app/**", "!app/**/*.js"])
         .pipe(gulp.dest("build/app"));
 });
 /* get the index file to the root of the build */
@@ -36,6 +35,8 @@ gulp.task("assets", function(){
     return gulp.src(["css/main.css"])
         .pipe(gulp.dest("build/css"));
 });
+
+
 /**
  * Copy all required libraries into build directory.
  */
