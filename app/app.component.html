@@ -30,8 +30,8 @@
                 <li><a href="#experience" data-scroll (click)="toggleNavbar()"><span>{{'EXPERIENCE' | translate}}</span></a></li>
                 <li><a href="#skills" data-scroll (click)="toggleNavbar()"><span>{{'ABILITIES' | translate}}</span></a></li>
                 <li><a href="#contact" data-scroll (click)="toggleNavbar()"><span>{{'CONTACT' | translate}}</span></a></li>
-                <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')" class="mobile-language-top"><a href><span>Polski</span></a></li>
-                <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')" class="mobile-language-bottom"><a href><span>English</span></a></li>
+                <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')" class="mobile-language-top"><a><span>Polski</span></a></li>
+                <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')" class="mobile-language-bottom"><a><span>English</span></a></li>
             </ul>
         </div>
     </div>
