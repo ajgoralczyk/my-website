@@ -1,5 +1,5 @@
 <nav class="navbar navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid hidden-xs">
         <div class="language">
             <ul class="list-unstyled list-inline">
                 <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')"><span>PL</span></li>
@@ -7,15 +7,35 @@
                 <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')"><span>EN</span></li>
             </ul>
         </div>
-        <div class="dot-menu hidden-xs hidden-sm" data-gumshoe-header>
+        <div class="dot-menu" data-gumshoe-header>
             <ul class="list-unstyled" data-gumshoe>
-                <li><a href="#about" data-scroll><span>About</span></a></li>
-                <li><a href="#experience" data-scroll><span>Experience</span></a></li>
-                <li><a href="#skills" data-scroll><span>Skills</span></a></li>
-                <li><a href="#contact" data-scroll><span>Contact</span></a></li>
+                <li><a href="#about" data-scroll><span>{{'ABOUT' | translate}}</span></a></li>
+                <li><a href="#experience" data-scroll><span>{{'EXPERIENCE' | translate}}</span></a></li>
+                <li><a href="#skills" data-scroll><span>{{'ABILITIES' | translate}}</span></a></li>
+                <li><a href="#contact" data-scroll><span>{{'CONTACT' | translate}}</span></a></li>
             </ul>
         </div>
     </div>
+
+    <!-- mobile -->
+    <div class="container-fluid mobile-navbar visible-xs">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" (click)="toggleNavbar()">
+                <i class="fa fa-angle-down" [ngClass] = "{'fa-rotate-180' : !isClosed()}"></i>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" [ngClass] = "{'collapse' : isClosed(), 'collapsed' : !isClosed()}">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about" data-scroll (click)="toggleNavbar()"><span>{{'ABOUT' | translate}}</span></a></li>
+                <li><a href="#experience" data-scroll (click)="toggleNavbar()"><span>{{'EXPERIENCE' | translate}}</span></a></li>
+                <li><a href="#skills" data-scroll (click)="toggleNavbar()"><span>{{'ABILITIES' | translate}}</span></a></li>
+                <li><a href="#contact" data-scroll (click)="toggleNavbar()"><span>{{'CONTACT' | translate}}</span></a></li>
+                <li [ngClass]="{'active' : isLanguage('pl')}" (click)="changeLanguage('pl')" class="mobile-language-top"><a href><span>Polski</span></a></li>
+                <li [ngClass]="{'active' : isLanguage('en')}" (click)="changeLanguage('en')" class="mobile-language-bottom"><a href><span>English</span></a></li>
+            </ul>
+        </div>
+    </div>
+
 </nav>
 <header class="jumbotron">
     <div class="page-title">Agnieszka Jaśmina Góralczyk</div>
@@ -25,11 +45,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2">
-                    <h1>About</h1>
+                    <h1>{{'ABOUT' | translate}}</h1>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9">
                     <article>
-                        <p>{{ 'HELLO' | translate:'{value: "world"}' }} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut sagittis nulla. Donec ultricies elit vel diam pretium gravida. Phasellus non nisi sed velit bibendum consectetur. Pellentesque ut enim sit amet ex bibendum pulvinar. In vitae nulla et est egestas mollis vitae non metus. Vivamus imperdiet urna nisi, vitae porta lacus aliquam ac. Fusce consequat finibus nisi, eget posuere velit maximus ac. Aenean porttitor magna non lacinia hendrerit. Quisque a augue malesuada, tincidunt risus quis, convallis purus. Vivamus felis enim, dignissim eu eros hendrerit, ornare feugiat tortor. Suspendisse lorem neque, sagittis sit amet velit ac, aliquam rutrum metus. Vestibulum sit amet orci rutrum, malesuada dolor sit amet, rhoncus orci. Nullam lacinia, nisl quis accumsan vestibulum, diam lorem pulvinar lorem, sit amet maximus ipsum purus at enim.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut sagittis nulla. Donec ultricies elit vel diam pretium gravida. Phasellus non nisi sed velit bibendum consectetur. Pellentesque ut enim sit amet ex bibendum pulvinar. In vitae nulla et est egestas mollis vitae non metus. Vivamus imperdiet urna nisi, vitae porta lacus aliquam ac. Fusce consequat finibus nisi, eget posuere velit maximus ac. Aenean porttitor magna non lacinia hendrerit. Quisque a augue malesuada, tincidunt risus quis, convallis purus. Vivamus felis enim, dignissim eu eros hendrerit, ornare feugiat tortor. Suspendisse lorem neque, sagittis sit amet velit ac, aliquam rutrum metus. Vestibulum sit amet orci rutrum, malesuada dolor sit amet, rhoncus orci. Nullam lacinia, nisl quis accumsan vestibulum, diam lorem pulvinar lorem, sit amet maximus ipsum purus at enim.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut sagittis nulla. Donec ultricies elit vel diam pretium gravida. Phasellus non nisi sed velit bibendum consectetur. Pellentesque ut enim sit amet ex bibendum pulvinar. In vitae nulla et est egestas mollis vitae non metus. Vivamus imperdiet urna nisi, vitae porta lacus aliquam ac.</p>
                     </article>
                 </div>
@@ -40,10 +60,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2">
-                    <h1>Experience</h1>
+                    <h1>{{'EXPERIENCE' | translate}}</h1>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9">
-                    <h2>Career</h2>
+                    <h2>{{'CAREER' | translate}}</h2>
                     <article>
                         <h3>Frontend Developer</h3>
                         <div class="row" style="margin-bottom: 10px;">
@@ -52,7 +72,7 @@
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris massa, tempus nec sollicitudin nec, venenatis lobortis erat. Aliquam ullamcorper iaculis molestie. Nam posuere finibus turpis, vel pretium libero auctor et. Maecenas pellentesque non quam ultricies consectetur. Morbi venenatis metus mauris, et dapibus felis semper vitae. Curabitur iaculis quam non tortor ultricies, ac maximus ex.</p>
                     </article>
-                    <h2>Education</h2>
+                    <h2>{{'EDUCATION' | translate}}</h2>
                     <article>
                         <h3>Master of Computer Science </h3>
                         <div class="row" style="margin-bottom: 10px;">
@@ -85,10 +105,59 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2">
-                    <h1>Skills</h1>
+                    <h1>{{'ABILITIES' | translate}}</h1>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9">
-                    <h2>Tools</h2>
+                    <h2>{{'SKILLS' | translate}}</h2>
+                    <article>
+                        <div class="row wide-gutter">
+                            <div class="col-xs-12 col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li>Adobe Illustrator
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                    <li>Adobe Photoshop
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li>AngularJS
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                    <li>JavaScript
+                                        <ol class="skill pull-right">
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li active></li>
+                                            <li></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <h2>{{'TOOLS' | translate}}</h2>
                     <article>
                         <div class="row wide-gutter">
                             <div class="col-xs-12 col-sm-6">
@@ -146,7 +215,7 @@
                             </div>
                         </div>
                     </article>
-                    <h2>Languages</h2>
+                    <h2>{{'LANGUAGES' | translate}}</h2>
                     <article>
                         <div class="row wide-gutter">
                             <div class="col-xs-12 col-sm-6">
@@ -203,7 +272,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2">
-                    <h1>Contact</h1>
+                    <h1>{{'CONTACT' | translate}}</h1>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9">
                     <div class="row wide-gutter">

@@ -3,9 +3,11 @@
 $night: #272727;
 $alabaster: #FDFFFC;
 $smoke: #F3F3F3;
-$bermuda: #50CDB6;
-$pine: #1D9A83;
-$topaz: #096589; 
+$bermuda: #5DD9C1;
+$pine: #2AA68E;
+$topaz: #C3FFFF; 
+$royal-blue: #5B64E5;
+$fog: #DAE3FF;
 $watermelon: #FF3B3F;
 .browsehappy {
     margin: 0.2em 0;
@@ -68,8 +70,10 @@ main {
         color: $alabaster;
         width: 100%;
         text-shadow: 0 0 50px #000000;
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
     }
-
 }
 
 section {
@@ -163,6 +167,52 @@ nav {
     }
 }
 
+.mobile-navbar {
+    background-color: $alabaster;
+    button {
+        padding: 0;
+        font-size: 18px;
+        i {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
+    .nav>li>a {
+        color: $night;
+        &:hover, &:focus {
+            color: $night;
+            background-color: $smoke;
+        }
+    }
+    .navbar-nav {
+        margin: 0 -15px;
+    }
+    .mobile-language-top {
+        border-top: 1px solid $night;
+    }
+    .mobile-language-bottom {
+        border-bottom: 1px solid $night;
+    }
+    .active {
+        font-weight: 600;
+    }
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 1000px;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    &.collapse {
+        max-height: 0;
+    }
+}
+
 .dot-menu {
     position: fixed;
     right: 20px;
@@ -187,7 +237,6 @@ nav {
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -ms-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
             &:focus, &:hover {
                 color: $night;
                 text-decoration: none;
@@ -200,7 +249,6 @@ nav {
                 -webkit-transition: all 0.7s ease;
                 -moz-transition: all 0.7s ease;
                 -ms-transition: all 0.7s ease;
-                -o-transition: all 0.7s ease;
                 transition: all 0.7s ease;
                 position: absolute;
                 opacity: 0;
@@ -285,4 +333,6 @@ ol, ul {
     -webkit-padding-start: 10px;
 }
 
-
+::selection {
+  background: $fog;
+}

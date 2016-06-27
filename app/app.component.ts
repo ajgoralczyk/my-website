@@ -21,6 +21,7 @@ class Message {
 
 export class AppComponent {
     name: string = 'World';
+    closedNavbar: boolean = true;
     formData: Message = new Message();
     userLang: string;
     translateService: TranslateService;
@@ -37,6 +38,14 @@ export class AppComponent {
 
     isLanguage(lang: string) {
       return this.userLang === lang;
+    }
+
+    isClosed() {
+      return this.closedNavbar;
+    }
+
+    toggleNavbar() {
+      this.closedNavbar = !this.closedNavbar;
     }
 
     changeLanguage(lang: string) {

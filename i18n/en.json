@@ -1,3 +1,37 @@
 {
-  "HELLO": "hello {{value}}"
+  "ABOUT": "About",
+  "EXPERIENCE": "Experience",
+  "ABILITIES": "Abilities",
+  "CONTACT": "Contact",
+  "DESCRIPTION_PART1": "",
+  "DESCRIPTION_PART2": "",
+  "CAREER": "Career",
+  "CAREERS": {
+  	"COHESIVA": {
+  	  "COMPANY": "Cohesiva",
+  	  "DATES": "Jan 2014 - Feb 2016",
+  	  "DESCRIPTION": ""
+    }
+  },
+  "EDUCATION": "Education",
+  "SCHOOLS": {
+  	"CS_MASTERS": {
+  	  "SCHOOL": "Cohesiva",
+  	  "DATES": "Jan 2014 - Feb 2016",
+  	  "DESCRIPTION": ""
+  	},
+  	"DESIGN_BACHELOR": {
+  	  "SCHOOL": "Cohesiva",
+  	  "DATES": "Jan 2014 - Feb 2016",
+  	  "DESCRIPTION": ""
+  	},
+  	"CS_BACHELOR": {
+  	  "SCHOOL": "Cohesiva",
+  	  "DATES": "Jan 2014 - Feb 2016",
+  	  "DESCRIPTION": ""
+  	}
+  },
+  "TOOLS": "Tools",
+  "LANGUAGES": "Languages",
+  "SKILLS": "Skills"
 }
