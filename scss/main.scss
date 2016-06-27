@@ -16,16 +16,14 @@ $watermelon: #FF3B3F;
     padding: 0.2em 0;
 }
 
-html, my-app {
+html {
     height: 100%;
-    width: 100%;
 }
 
 body {
     padding: 0;
     margin: 0;
     height: 100%;
-    width: 100%;
     background-color: $night;
     color: $smoke;
     font-family: 'Roboto', Arial, sans-serif;
