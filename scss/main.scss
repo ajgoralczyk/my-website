@@ -298,6 +298,16 @@ label {
         text-align: right;
     }
 }
+.ajg-links {
+    @media (max-width: 415px) {
+        li {
+            padding: 10px 0;
+        }
+        i {
+            display: none;
+        }
+    }
+}
 
 footer {
     span {
