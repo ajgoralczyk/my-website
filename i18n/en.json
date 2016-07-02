@@ -3,32 +3,36 @@
     "EXPERIENCE": "Experience",
     "ABILITIES": "Abilities",
     "CONTACT": "Contact",
-    "DESCRIPTION_PART1": "",
-    "DESCRIPTION_PART2": "",
+    "DESCRIPTION_PART1": " ",
+    "DESCRIPTION_PART2": " ",
     "CAREER": "Career",
     "CAREERS": {
         "COHESIVA": {
             "COMPANY": "Cohesiva",
+            "TITLE": "Frontend Developer",
             "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "DESCRIPTION": " "
         }
     },
     "EDUCATION": "Education",
     "SCHOOLS": {
         "CS_MASTERS": {
-            "SCHOOL": "Cohesiva",
-            "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "SCHOOL": "University of Wroclaw",
+            "TITLE": "Master of Computer Science (master thesis in progress)",
+            "DATES": "Oct 2012 - Feb 2015",
+            "DESCRIPTION": "Selected academic courses: Human Computer Interaction, Computational Geometry, Cryptography, Theory and applications of finite automata, Algorithmic Game Theory, Speech synthesis, Effective Software Development, Agile software development, Object Oriented Design"
         },
         "DESIGN_BACHELOR": {
-            "SCHOOL": "Cohesiva",
-            "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "SCHOOL": " Academy of Art and Design in Wroclaw",
+            "TITLE": "Bachelor of Design (incomplete)",
+            "DATES": "Oct 2011 - Feb 2013",
+            "DESCRIPTION": " "
         },
         "CS_BACHELOR": {
-            "SCHOOL": "Cohesiva",
-            "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "SCHOOL": "University of Wroclaw",
+            "TITLE": "Bachelor of Computer Science",
+            "DATES": "Oct 2009 - Sep 2012",
+            "DESCRIPTION": "Selected academic courses: Algorithms and Data Structures, Formal Languages and Computational Complexity, Data Mining, Data Bases, Object-Oriented Programming"
         }
     },
     "TOOLS": "Tools",

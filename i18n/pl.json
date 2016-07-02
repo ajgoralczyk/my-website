@@ -9,6 +9,7 @@
     "CAREERS": {
         "COHESIVA": {
             "COMPANY": "Cohesiva",
+            "TITLE": "Frontend Developer",
             "DATES": "Sty 2014 - Lut 2016",
             "DESCRIPTION": ""
         }
@@ -16,17 +17,20 @@
     "EDUCATION": "Edukacja",
     "SCHOOLS": {
         "CS_MASTERS": {
-            "SCHOOL": "Cohesiva",
+            "SCHOOL": "Uniwersytet Wrocławski",
+            "TITLE": "Frontend Developer",
             "DATES": "Jan 2014 - Feb 2016",
             "DESCRIPTION": ""
         },
         "DESIGN_BACHELOR": {
             "SCHOOL": "Cohesiva",
+            "TITLE": "Frontend Developer",
             "DATES": "Jan 2014 - Feb 2016",
             "DESCRIPTION": ""
         },
         "CS_BACHELOR": {
-            "SCHOOL": "Cohesiva",
+            "SCHOOL": "Uniwersytet Wrocławski",
+            "TITLE": "Frontend Developer",
             "DATES": "Jan 2014 - Feb 2016",
             "DESCRIPTION": ""
         }
