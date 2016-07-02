@@ -113,44 +113,26 @@
                         <div class="row wide-gutter">
                             <div class="col-xs-12 col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li>Adobe Illustrator
+                                    <li *ngFor="let skill of abilities.skills_1st_column">{{ skill.name }}
                                         <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
-                                        </ol>
-                                    </li>
-                                    <li>Adobe Photoshop
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
+                                            <li [ngClass]="{'active' : skill.value >= 1}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 2}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 3}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 4}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 5}"></li>
                                         </ol>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li>AngularJS
+                                    <li *ngFor="let skill of abilities.skills">{{ skill.name }}
                                         <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
-                                        </ol>
-                                    </li>
-                                    <li>JavaScript
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
+                                            <li [ngClass]="{'active' : skill.value >= 1}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 2}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 3}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 4}"></li>
+                                            <li [ngClass]="{'active' : skill.value >= 5}"></li>
                                         </ol>
                                     </li>
                                 </ul>
@@ -162,53 +144,26 @@
                         <div class="row wide-gutter">
                             <div class="col-xs-12 col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li>Adobe Illustrator
+                                    <li *ngFor="let tool of abilities.tools_1st_column">{{ tool.name }}
                                         <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
-                                        </ol>
-                                    </li>
-                                    <li>Adobe Photoshop
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
+                                            <li [ngClass]="{'active' : tool.value >= 1}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 2}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 3}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 4}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 5}"></li>
                                         </ol>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li>AngularJS
+                                    <li *ngFor="let tool of abilities.tools">{{ tool.name }}
                                         <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
-                                        </ol>
-                                    </li>
-                                    <li>JavaScript
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
-                                        </ol>
-                                    </li>
-                                    <li>JavaScript
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
+                                            <li [ngClass]="{'active' : tool.value >= 1}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 2}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 3}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 4}"></li>
+                                            <li [ngClass]="{'active' : tool.value >= 5}"></li>
                                         </ol>
                                     </li>
                                 </ul>
@@ -220,44 +175,26 @@
                         <div class="row wide-gutter">
                             <div class="col-xs-12 col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li>Polish (native)
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                        </ol>
-                                    </li>
-                                    <li>English
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
+                                    <li *ngFor="let lang of abilities.languages_1st_column">{{ 'LANGS.' + lang.name | translate }}
+                                        <ol class="skill pull-right" tooltipPlacement="bottom" tooltip="On the Bottom!">
+                                            <li [ngClass]="{'active' : lang.value >= 1}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 2}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 3}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 4}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 5}"></li>
                                         </ol>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li>Spanish
+                                    <li *ngFor="let lang of abilities.languages">{{ 'LANGS.' + lang.name | translate }}
                                         <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li active></li>
-                                            <li active></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ol>
-                                    </li>
-                                    <li>German
-                                        <ol class="skill pull-right">
-                                            <li active></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
+                                            <li [ngClass]="{'active' : lang.value >= 1}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 2}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 3}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 4}"></li>
+                                            <li [ngClass]="{'active' : lang.value >= 5}"></li>
                                         </ol>
                                     </li>
                                 </ul>

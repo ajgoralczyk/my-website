@@ -1,37 +1,51 @@
 {
-  "ABOUT": "O mnie",
-  "EXPERIENCE": "Doświadczenie",
-  "ABILITIES": "Kompetencje",
-  "CONTACT": "Kontakt",
-  "DESCRIPTION_PART1": "",
-  "DESCRIPTION_PART2": "",
-  "CAREER": "Praca",
-  "CAREERS": {
-  	"COHESIVA": {
-  	  "COMPANY": "Cohesiva",
-  	  "DATES": "Sty 2014 - Lut 2016",
-  	  "DESCRIPTION": ""
+    "ABOUT": "O mnie",
+    "EXPERIENCE": "Doświadczenie",
+    "ABILITIES": "Kompetencje",
+    "CONTACT": "Kontakt",
+    "DESCRIPTION_PART1": "",
+    "DESCRIPTION_PART2": "",
+    "CAREER": "Praca",
+    "CAREERS": {
+        "COHESIVA": {
+            "COMPANY": "Cohesiva",
+            "DATES": "Sty 2014 - Lut 2016",
+            "DESCRIPTION": ""
+        }
+    },
+    "EDUCATION": "Edukacja",
+    "SCHOOLS": {
+        "CS_MASTERS": {
+            "SCHOOL": "Cohesiva",
+            "DATES": "Jan 2014 - Feb 2016",
+            "DESCRIPTION": ""
+        },
+        "DESIGN_BACHELOR": {
+            "SCHOOL": "Cohesiva",
+            "DATES": "Jan 2014 - Feb 2016",
+            "DESCRIPTION": ""
+        },
+        "CS_BACHELOR": {
+            "SCHOOL": "Cohesiva",
+            "DATES": "Jan 2014 - Feb 2016",
+            "DESCRIPTION": ""
+        }
+    },
+    "TOOLS": "Narzędzia",
+    "LANGUAGES": "Języki",
+    "LANGS": {
+        "Polish": "Polski (Język ojczysty)",
+        "English": "Angielski",
+        "Spanish": "Hiszpański",
+        "German": "Niemiecki"
+    },
+    "SKILLS": "Umiejętności",
+    "TOOLTIPS": {
+        "0": "A co to w ogóle jest?",
+        "1": "Używałam kiedyś, ale prawie nic nie pamiętam.",
+        "2": "Pewne rzeczy umiem zrobić sama, wielu niestety nie.",
+        "3": "Radzę sobie, ale wielu rzeczy muszę się jeszcze nauczyć.",
+        "4": "Jest dobrze, ale czasami napotykam nowe niewiadome.",
+        "5": "Nie mam z tym żadnych problemów."
     }
-  },
-  "EDUCATION": "Edukacja",
-  "SCHOOLS": {
-  	"CS_MASTERS": {
-  	  "SCHOOL": "Cohesiva",
-  	  "DATES": "Jan 2014 - Feb 2016",
-  	  "DESCRIPTION": ""
-  	},
-  	"DESIGN_BACHELOR": {
-  	  "SCHOOL": "Cohesiva",
-  	  "DATES": "Jan 2014 - Feb 2016",
-  	  "DESCRIPTION": ""
-  	},
-  	"CS_BACHELOR": {
-  	  "SCHOOL": "Cohesiva",
-  	  "DATES": "Jan 2014 - Feb 2016",
-  	  "DESCRIPTION": ""
-  	}
-  },
-  "TOOLS": "Narzędzia",
-  "LANGUAGES": "Języki",
-  "SKILLS": "Umiejętności"
 }

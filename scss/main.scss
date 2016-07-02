@@ -129,7 +129,7 @@ section {
         background-color: $bermuda;
         opacity: 0.2;
         border-radius: 10px;
-        &[active] {
+        &.active {
             margin: 0;
             opacity: 1;
         }

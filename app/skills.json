@@ -1,0 +1,77 @@
+{
+	"skills" : [
+		{
+			"name": "AngularJS",
+			"value": 4
+		}, {
+			"name": "HTML(5)",
+			"value": 4
+		}, {
+			"name": "CSS(3)",
+			"value": 4
+		}, {
+			"name": "Sass",
+			"value": 4
+		}, {
+			"name": "Bootstrap",
+			"value": 4
+		}, {
+			"name": "JavaScript",
+			"value": 3
+		}, {
+			"name": "Python",
+			"value": 3
+		}, {
+			"name": "Gulp",
+			"value": 3
+		}, {
+			"name": "Grunt",
+			"value": 2
+		}, {
+			"name": "jQuery",
+			"value": 2
+		}, {
+			"name": "Java",
+			"value": 2
+		}
+	],
+	"tools" : [
+		{
+			"name": "Git",
+			"value": 3
+		}, {
+			"name": "UXPin",
+			"value": 3	
+		}, {
+			"name": "JIRA",
+			"value": 3
+		}, {
+			"name": "Eclipse",
+			"value": 2
+		}, {
+			"name": "Adobe Photoshop",
+			"value": 3
+		}, {
+			"name": "Adobe Illustrator",
+			"value": 3
+		}, {
+			"name": "Adobe InDesign",
+			"value": 1
+		}
+	],
+	"languages" : [
+		{
+			"name": "Polish",
+			"value": 5
+		}, {
+			"name": "English",
+			"value": 5	
+		}, {
+			"name": "Spanish",
+			"value": 3
+		}, {
+			"name": "German",
+			"value": 1
+		}
+	]
+}
