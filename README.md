@@ -1,11 +1,13 @@
-Work in progress...
+Still work in progress...
+
 
 
 TODO:
 
 - tooltips
-- content, about me, etc.
-
-
+- refresh content, about me, etc.
+- new favicon
+- SEO
+- clean-up on server
 - what with menu for tablet?
-- refresh keep scrolled position
+- after refresh keep scrolled position or do sth with anchors

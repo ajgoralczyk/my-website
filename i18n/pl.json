@@ -3,8 +3,8 @@
     "EXPERIENCE": "Doświadczenie",
     "ABILITIES": "Kompetencje",
     "CONTACT": "Kontakt",
-    "DESCRIPTION_PART1": "",
-    "DESCRIPTION_PART2": "",
+    "DESCRIPTION_PART1": "Odkąd pamiętam uwielbiałam robić dwie rzeczy: rozwiązywać łamigłówki i rysować. Pierwsza miłość zaprowadziła mnie na studia informatyczne, łamigłówki które teraz rozwiązuję są dużo większe i bardziej skomplikowane niż te, które rozwiązywałam jako dziecko. Ponadto interesuję się psychologią - to też jest swego rodzaju łamigłówka, zastanawianie się jak ludzie działają i dlaczego zachowują się w ten a nie inny sposób. Druga miłość zaprowadziła mnie na Akademię Sztuk Pięknych, gdzie studiowałam wzornictwo, ale odeszłam przed końcem studiów. Co nie zmienia faktu, że nadal w czasie wolnym lubię chwycić za ołówek lub pędzel. Obecnie próbuję pogodzić obie pasje. Jestem web deweloperem, który zwraca dużą uwagę na interfejs i doświadczenia użytkownika. Uważam że wszystko powinno być tak proste i intuicyjne jak to tylko możliwe i chciałabym zmienić świat na lepszy i może ładniejszy, chociaż odrobinę.",
+    "DESCRIPTION_PART2": "Poza pracą staram się cały czas rozwijać i uczyć nowych rzeczy. Uwielbiam spędzać aktywnie czas, ćwiczyć, poznawać nowych ludzi, podróżować do nowych miejsc, uczyć się nowych języków, grać w planszówki i skreślać tak dużo rzeczy ile to tylko możliwe z mojej 'bucket list'. Z drugiej strony bardzo lubię spędzić wieczór czytając książkę albo oglądać filmy przez całą noc.",
     "CAREER": "Praca",
     "CAREERS": {
         "COHESIVA": {
@@ -18,21 +18,21 @@
     "SCHOOLS": {
         "CS_MASTERS": {
             "SCHOOL": "Uniwersytet Wrocławski",
-            "TITLE": "Frontend Developer",
-            "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "TITLE": "Informatyka - studia magisterskie (praca magisterska w trakcie)",
+            "DATES": "Paź 2012 - Lut 2015",
+            "DESCRIPTION": "Wybrane przedmioty: Komunikacja człowiek-komputer, Geometria obliczeniowa, Kryptografia, Teoria i zastosowania automatów skończonych, Algorytmiczna teoria gier, Synteza mowy, Efektywne tworzenie oprogramowania, Metodyki zwinne wytwarzania oprogramowania, Projektowanie obiektowe oprogramowania"
         },
         "DESIGN_BACHELOR": {
-            "SCHOOL": "Cohesiva",
-            "TITLE": "Frontend Developer",
-            "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "SCHOOL": "Akademia Sztuk Pięknych we Wrocławiu",
+            "TITLE": "Wzornictwo - studia licencjackie (przerwane)",
+            "DATES": "Paź 2011 - Lut 2013",
+            "DESCRIPTION": " "
         },
         "CS_BACHELOR": {
             "SCHOOL": "Uniwersytet Wrocławski",
-            "TITLE": "Frontend Developer",
-            "DATES": "Jan 2014 - Feb 2016",
-            "DESCRIPTION": ""
+            "TITLE": "Informatyka - studia licencjackie",
+            "DATES": "Paź 2009 - Wrz 2012",
+            "DESCRIPTION": "Wybrane przedmioty: Algorytmy i struktury danych, Języki formalne i złożoność obliczeniowa, Data mining, Eksploracja danych, Bazy danych, Programowanie obiektowe"
         }
     },
     "TOOLS": "Narzędzia",

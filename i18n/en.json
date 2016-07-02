@@ -3,13 +3,13 @@
     "EXPERIENCE": "Experience",
     "ABILITIES": "Abilities",
     "CONTACT": "Contact",
-    "DESCRIPTION_PART1": " ",
-    "DESCRIPTION_PART2": " ",
+    "DESCRIPTION_PART1": "Ever since I can remember I loved two things: solving puzzles and drawing. First love lead me to study Computer Science, the puzzles I solve now are just bigger and more complex than those I solved as a child. I'm also interested in psychology - it's also a puzzle, just completely different, figuring out how people work and why they behave certain way. Second love lead me to Academy of Art and Design, where I studied design, but I left before graduating. Still, in my free time I love to draw or paint. I am currently trying to combine both my interests. I am a web developer, who cares deeply about user interface and user experience. I believe things should be as simple and intuitive as possible and I hope to make the world better and maybe more beautiful, at least a little bit.",
+    "DESCRIPTION_PART2": "Outside of work I’m always looking to improve and learn new things. I enjoy leading an active lifestyle, keeping fit, meeting new people, traveling to new places, learning new languages, playing tabletop games and crossing off as many things as possible from my bucket list. On the other hand I love spending quiet night reading a book or watching a movie marathon.",
     "CAREER": "Career",
     "CAREERS": {
         "COHESIVA": {
             "COMPANY": "Cohesiva",
-            "TITLE": "Frontend Developer",
+            "TITLE": "Junior Frontend Developer",
             "DATES": "Jan 2014 - Feb 2016",
             "DESCRIPTION": " "
         }

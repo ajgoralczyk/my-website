@@ -117,11 +117,15 @@ section {
     article:not(:last-child) {
         margin-bottom: 50px;
     }
+    ul>li {
+        margin-bottom: 5px;
+    }
 }
 
 .skill {
     display: inline;
     text-align: right;
+    padding-top: 5px;
     li {
         width: 12px;
         height: 12px;
