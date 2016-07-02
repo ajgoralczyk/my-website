@@ -58,6 +58,7 @@ export class AppComponent {
     }
 
     ngOnInit() {
+      window.location.hash = "";
       smoothScroll.init();
       gumshoe.init({
         callback: function(nav :any) {
@@ -71,6 +72,7 @@ export class AppComponent {
           }
         }
       });
+
       this.getSkills();
     }
 
