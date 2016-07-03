@@ -1,9 +1,13 @@
+Personal website made using Angular2, Typescript, Bootstrap.
 Still work in progress...
 
 
 
-TODO:
 
+
+
+
+TODO:
 - tooltips
 - refresh content, about me, etc.
 - new favicon
